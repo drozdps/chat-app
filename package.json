@@ -1,0 +1,22 @@
+{
+  "name": "chat-app",
+  "version": "1.0.0",
+  "description": "NodeJS course test Chat application",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "env-cmd -f ./config/test.env jest --watch --runInBand"
+  },
+  "author": "Pavel Drozd",
+  "license": "ISC",
+  "dependencies": {
+    "bad-words": "^3.0.4",
+    "express": "^4.17.2",
+    "path": "^0.12.7",
+    "socket.io": "^4.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
