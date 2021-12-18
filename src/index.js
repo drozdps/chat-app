@@ -1,6 +1,6 @@
 const app = require('./app');
 const http = require('http');
-const port = process.env.PORT | 3000;
+const port = process.env.PORT || 3000;
 const socketio = require('socket.io');
 const Filter = require('bad-words');
 const { generateMessage, generateLocationMessage } = require('./utils/messages');
